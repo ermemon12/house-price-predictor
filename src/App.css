@@ -1,0 +1,60 @@
+/* Make sure the app takes full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex column layout for App */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Main content grows to push footer down */
+.main-content {
+  flex: 1;
+}
+
+/* Remove default body margin/padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Make sure root covers full height */
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Let footer stick at the bottom */
+footer {
+  margin: 0;
+  padding-bottom: 0;
+}
+/* Ensure the app takes full height */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Let main content expand and push footer down */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* About section adjustments */
+.about-container {
+  flex: 1;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
